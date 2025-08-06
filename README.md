@@ -13,3 +13,12 @@ Studies used for this analysis are dated Jan-Mar, 2020.
 "Embedding Research" parses the text and creates a TF-IDF matrix, with each row representing an abstract, and each column a word, 
 with the correspoding value being the TF-IDF score for the corresponding word and abstract.
 
+## Process
+
+Embed the abstracts in low-dim space.
+Cluster in low dim with UMAP for visualization.
+Grid the low-dim space and calculate saturation.
+Map unsaturated values to key terms, based on loading scores.
+Find clusters with high SSD/span. Are these the clusters with highest volatility?
+Create markov text generator. 
+Create synthetic abstracts with probable values of missing data.
