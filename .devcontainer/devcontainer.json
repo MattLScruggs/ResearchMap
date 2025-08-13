@@ -5,7 +5,6 @@
     "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0":{},
     "ghcr.io/rocker-org/devcontainer-features/r-packages:1":{
       "packages":"tidyverse"}
-    },
-  "postCreateCommand": "sudo rstudio-server start"
+    }
   }
 
