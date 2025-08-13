@@ -2,7 +2,7 @@
   "name": "R (rocker/r-ver base)",
   "image": "ghcr.io/rocker-org/devcontainer/r-ver:latest",
   "features": {
-    "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0",
-    "ghcr.io/rocker-org/devcontainer-features/r-packages:1"
+    "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0":{},
+    "ghcr.io/rocker-org/devcontainer-features/r-packages:1":{}
   }
 }
