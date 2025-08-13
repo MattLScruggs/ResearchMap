@@ -1,8 +1,11 @@
 {
   "name": "R (rocker/r-ver base)",
-  "image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
+  "image": "ghcr.io/rocker-org/devcontainer/r-ver:latest",
   "features": {
     "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0":{},
-    "ghcr.io/rocker-org/devcontainer-features/r-packages:1":{}
+    "ghcr.io/rocker-org/devcontainer-features/r-packages:1":{
+      "packages":"tidyverse"}
+    },
+  "postCreateCommand": "sudo rstudio-server start"
   }
-}
+
