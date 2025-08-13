@@ -5,6 +5,15 @@
     "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0":{},
     "ghcr.io/rocker-org/devcontainer-features/r-packages:1":{
       "packages":"tidyverse"}
-    }
-  }
+    },
+  "forwardPorts": [8787],
+	"portsAttributes": {
+		"8787": {
+			"label": "Rstudio",
+			"requireLocalPort": true,
+			"onAutoForward": "ignore"
+		}
+  },
+  "postAttachCommand": "sudo rstudio-server start"
+}
 
